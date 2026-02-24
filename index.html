@@ -1531,19 +1531,23 @@
     "ratingValue": "4.9",
     "reviewCount": "56"
   },
-  "service": [
-    {"@type":"MedicalProcedure","name":"Консультация стоматолога-хирурга"},
-    {"@type":"MedicalProcedure","name":"Классическая имплантация зубов"},
-    {"@type":"MedicalProcedure","name":"Имплантация All-on-4"},
-    {"@type":"MedicalProcedure","name":"Имплантация All-on-6"},
-    {"@type":"MedicalProcedure","name":"Удаление зубов"},
-    {"@type":"MedicalProcedure","name":"Синус-лифтинг"},
-    {"@type":"MedicalProcedure","name":"Чистка зубов ультразвуком"},
-    {"@type":"MedicalProcedure","name":"Пластика уздечки зуба"},
-    {"@type":"MedicalProcedure","name":"Удаление кисты зуба"},
-    {"@type":"MedicalProcedure","name":"Удаление ретинированного зуба"},
-    {"@type":"MedicalProcedure","name":"Резекция верхушки корня зуба (апикоэктомия)"}
-  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Услуги стоматологии",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "MedicalProcedure", "name": "Консультация стоматолога-хирурга" } },
+      { "@type": "Offer", "itemOffered": { "@type": "MedicalProcedure", "name": "Классическая имплантация зубов" } },
+      { "@type": "Offer", "itemOffered": { "@type": "MedicalProcedure", "name": "Имплантация All-on-4" } },
+      { "@type": "Offer", "itemOffered": { "@type": "MedicalProcedure", "name": "Имплантация All-on-6" } },
+      { "@type": "Offer", "itemOffered": { "@type": "MedicalProcedure", "name": "Удаление зубов" } },
+      { "@type": "Offer", "itemOffered": { "@type": "MedicalProcedure", "name": "Синус-лифтинг" } },
+      { "@type": "Offer", "itemOffered": { "@type": "MedicalProcedure", "name": "Удаление зуба ультразвуком" } },
+      { "@type": "Offer", "itemOffered": { "@type": "MedicalProcedure", "name": "Пластика уздечки зуба" } },
+      { "@type": "Offer", "itemOffered": { "@type": "MedicalProcedure", "name": "Удаление кисты зуба" } },
+      { "@type": "Offer", "itemOffered": { "@type": "MedicalProcedure", "name": "Удаление ретинированного зуба" } },
+      { "@type": "Offer", "itemOffered": { "@type": "MedicalProcedure", "name": "Резекция верхушки корня зуба (апикоэктомия)" } }
+    ]
+  },
   "review": [
     {"@type":"Review","author":{"@type":"Person","name":"Анна"},"reviewBody":"Долго откладывала имплантацию после удаления зуба, было страшно. Владимир Сергеевич подробно объяснил все этапы, операция прошла спокойно, а через несколько месяцев уже поставили коронку. Очень благодарна за внимательное отношение.","reviewRating":{"@type":"Rating","ratingValue":"5"}},
     {"@type":"Review","author":{"@type":"Person","name":"Виктор"},"reviewBody":"Делал у доктора All‑on‑4 на нижней челюсти. С первого дня чувствовал себя уверенно, временный протез стоял очень комфортно, сейчас уже с постоянным. Отдельное спасибо за подробные рекомендации по уходу.","reviewRating":{"@type":"Rating","ratingValue":"5"}},
@@ -1610,3 +1614,4 @@ alertEl.textContent = 'Не удалось отправить заявку. По
 });
 </script>
 </body> </html>
+
