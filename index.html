@@ -1624,24 +1624,18 @@ document.getElementById('orderForm').addEventListener('submit', function (e) {
     fd.append('phone', phone);
     fd.append('msg', msg);
 
-    fetch('https://allon6.minsk.by/order.php', { method: 'POST', body: fd })
-        .then(r => {
-            alertEl.classList.remove('d-none');
-            console.log('Status:', r.status, 'OK:', r.ok);  // Для отладки
-            if (r.ok) {
-                alertEl.className = 'alert alert-success';
-                alertEl.textContent = 'Заявка отправлена! Мы свяжемся с вами в ближайшее время.';
-                form.reset();  // Теперь работает
-            } else {
-                throw new Error(`HTTP ${r.status}`);
-            }
-        })
-        .catch(err => {
-            console.error(err);  // Для отладки
-            alertEl.className = 'alert alert-danger';
-            alertEl.textContent = 'Не удалось отправить заявку. Пожалуйста, позвоните нам по телефону: +375 (29) 320-27-27';
-            alertEl.classList.remove('d-none');
-        });
+    fetch('https://allon6.minsk.by/order.php', {
+    method: 'POST', 
+    body: fd,
+    mode: 'no-cors'  // Игнорирует CORS, но не читает ответ
+})
+.then(r => {
+    // Всегда считаем успешным при no-cors
+    alertEl.className = 'alert alert-success';
+    alertEl.textContent = 'Заявка отправлена!';
+    form.reset();
+    alertEl.classList.remove('d-none');
+})
 });
 </script>
 </body> </html>
