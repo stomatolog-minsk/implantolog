@@ -1606,39 +1606,42 @@
         }
     });
 
-    document.getElementById('orderForm').addEventListener('submit', function (e) {
-        e.preventDefault();
-        const phone   = document.getElementById('orderPhone').value.trim();
-        const msg     = orderMsgField.value.trim();
-        const alertEl = document.getElementById('orderAlert');
+document.getElementById('orderForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    const phone = document.getElementById('orderPhone').value.trim();
+    const msg = orderMsgField.value.trim();
+    const alertEl = document.getElementById('orderAlert');
+    const form = this;  // Ссылка на форму
 
-        if (!phone) {
-            alertEl.className = 'alert alert-danger';
-            alertEl.textContent = 'Пожалуйста, укажите номер телефона.';
+    if (!phone) {
+        alertEl.className = 'alert alert-danger';
+        alertEl.textContent = 'Пожалуйста, укажите номер телефона.';
+        alertEl.classList.remove('d-none');
+        return;
+    }
+
+    const fd = new FormData();
+    fd.append('phone', phone);
+    fd.append('msg', msg);
+
+    fetch('https://allon6.minsk.by/order.php', { method: 'POST', body: fd })
+        .then(r => {
             alertEl.classList.remove('d-none');
-            return;
-        }
-
-        const fd = new FormData();
-        fd.append('phone', phone);
-        fd.append('msg', msg);
-
-        fetch('https://allon6.minsk.by/order.php', { method: 'POST', body: fd })
-            .then(r => {
-                alertEl.classList.remove('d-none');
-                if (r.ok) {
-                    alertEl.className = 'alert alert-success';
-                    alertEl.textContent = 'Заявка отправлена! Мы свяжемся с вами в ближайшее время.';
-this.reset();
-} else {
-throw new Error();
-}
-})
-.catch(() => {
-alertEl.classList.remove('d-none');
-alertEl.className = 'alert alert-danger';
-alertEl.textContent = 'Не удалось отправить заявку. Пожалуйста, позвоните нам по телефону: +375 (29) 320-27-27';
-});
+            console.log('Status:', r.status, 'OK:', r.ok);  // Для отладки
+            if (r.ok) {
+                alertEl.className = 'alert alert-success';
+                alertEl.textContent = 'Заявка отправлена! Мы свяжемся с вами в ближайшее время.';
+                form.reset();  // Теперь работает
+            } else {
+                throw new Error(`HTTP ${r.status}`);
+            }
+        })
+        .catch(err => {
+            console.error(err);  // Для отладки
+            alertEl.className = 'alert alert-danger';
+            alertEl.textContent = 'Не удалось отправить заявку. Пожалуйста, позвоните нам по телефону: +375 (29) 320-27-27';
+            alertEl.classList.remove('d-none');
+        });
 });
 </script>
 </body> </html>
