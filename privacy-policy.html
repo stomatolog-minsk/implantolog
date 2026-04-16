@@ -1,1 +1,600 @@
+<!DOCTYPE html>
+<html lang="ru"><head>
+    <meta charset="utf-8">
+    <title>Политика конфиденциальности: stomatolog-hirurg.vercel.app</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="stomatolog-hirurg-rusak.svg" type="image/svg+xml">
+    <meta name="description" content="Политика конфиденциальности. Политика в отношении обработки персональных данных. Cookies-policy.">
+    <meta name="google-site-verification" content="WPl5B90rt8fce6v9bPTN-ebYE1_l08Od7lkIRwYjfHQ">
+    <meta property="og:title" content="Политика конфиденциальности: stomatolog-hirurg.vercel.app">
+    <meta property="og:description" content="Стоматолог‑хирург и имплантолог Русак Владимир Сергеевич в Минске. Имплантация MegaGen, Straumann, Roott, Alpha Bio, Neodent, Noris Medical, удаление зубов, All‑on‑4, All‑on‑6. Запись по телефону 8(033)302‑36‑86.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://stomatolog-hirurg.vercel.app/privacy-policy.html">
+    <meta property="og:locale" content="ru_RU">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .navbar {
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+        }
+        .hero {
+            padding: 6rem 0 4rem;
+            background: linear-gradient(135deg, #f5f9ff 0%, #ffffff 100%);
+            overflow: hidden;
+        }
+
+        .hero-img-wrap img {
+            width: 100%;
+            border-radius: 0; 
+            display: block;
+            object-fit: cover;
+        }
+
+
+        .hero-badge {
+            font-size: 0.9rem;
+            letter-spacing: 0.06em;
+        }
+
+        /* ───── ТИПОГРАФИЯ ───── */
+        .section-title {
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+            color: #6c757d;
+            max-width: 640px;
+        }
+
+        /* ───── КНОПКИ ───── */
+        .btn-rounded {
+            border-radius: 999px !important;
+            padding: 0.75rem 2rem;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            border-width: 0;
+            box-shadow: 0 10px 28px rgba(37, 99, 235, 0.35);
+            transition: box-shadow 0.2s ease, transform 0.15s ease, background 0.2s ease;
+        }
+
+        .btn-rounded:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 14px 36px rgba(30, 64, 175, 0.45);
+        }
+
+        .btn-rounded-sm {
+            border-radius: 999px !important;
+            padding: 0.55rem 1.5rem;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            box-shadow: 0 6px 18px rgba(15, 23, 42, 0.14);
+            transition: box-shadow 0.2s ease, transform 0.15s ease;
+        }
+
+        .btn-rounded-sm:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 24px rgba(15, 23, 42, 0.22);
+        }
+
+        .btn-primary.btn-rounded,
+        .btn-primary.btn-rounded-sm {
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            border: none;
+        }
+
+        .btn-primary.btn-rounded:hover,
+        .btn-primary.btn-rounded-sm:hover {
+            background: linear-gradient(135deg, #1d4ed8, #1e40af);
+        }
+
+        .btn-outline-primary.btn-rounded-sm {
+            border: 1.5px solid #2563eb;
+            color: #2563eb;
+            background: transparent;
+        }
+
+        .btn-outline-primary.btn-rounded-sm:hover {
+            background: #2563eb;
+            color: #fff;
+        }
+
+        /* ───── КАРТОЧКИ УСЛУГ — десктоп ───── */
+        .service-card {
+            border-radius: 1rem;
+            border: 1px solid #e5e7eb;
+            transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+            background-color: #ffffff;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .service-card:hover {
+            box-shadow: 0 14px 40px rgba(15, 23, 42, 0.14);
+            transform: translateY(-3px);
+            border-color: #2563eb;
+        }
+
+        /* Картинка внутри карточки */
+        .service-card .service-img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 0.75rem 0.75rem 0 0;
+            display: block;
+            flex-shrink: 0;
+        }
+
+        /* Тело карточки (текст + кнопки) */
+        .service-card .service-body {
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .service-card .service-body h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        .service-card .service-body p {
+            flex: 1;
+        }
+
+        /* Нижняя строка карточки: кнопка + цена */
+        .service-card .service-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 0.75rem;
+        }
+
+        .service-price-link {
+            text-decoration: none;
+            font-weight: 600;
+            color: #374151;
+        }
+
+        /* ───── МОБИЛЬНАЯ версия карточек ───── */
+        @media (max-width: 767.98px) {
+            /* Каждая карточка — на всю ширину, вертикальный макет */
+            .service-card {
+                flex-direction: column;
+                border-radius: 0.75rem;
+            }
+
+            .service-card .service-img {
+                width: 100%;
+                height: 220px;          /* чуть выше для мобайла */
+                border-radius: 0.75rem 0.75rem 0 0;
+            }
+
+            .service-card .service-body {
+                padding: 0.9rem 1rem 1rem;
+            }
+        }
+
+        /* ───── ПРЕИМУЩЕСТВА ───── */
+        .advantages-list li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* ───── БРЕНДЫ ───── */
+        .brand-logo-tile {
+            border-radius: 0.75rem;
+            border: 1px solid #e5e7eb;
+            padding: 0.75rem;
+            background-color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 90px;
+            transition: box-shadow 0.2s ease;
+        }
+
+        .brand-logo-tile:hover {
+            box-shadow: 0 6px 20px rgba(15, 23, 42, 0.1);
+        }
+
+        .brand-logo-tile img {
+            max-height: 50px;
+            width: auto;
+            max-width: 100%;
+            object-fit: contain;
+        }
+
+        /* ───── ОТЗЫВЫ ───── */
+        .review-card {
+            border-radius: 1rem;
+            border: 1px solid #e5e7eb;
+            background: #ffffff;
+        }
+
+        .review-avatar {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            filter: invert(1) grayscale(100%) brightness(0);
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 3rem;
+        }
+
+        /* ───── СЕРТИФИКАТЫ ───── */
+        .cert-slider {
+            overflow: hidden;
+            position: relative;
+        }
+
+        .cert-track {
+            display: flex;
+            animation: scrollCerts 30s linear infinite;
+            gap: 1.5rem;
+            align-items: flex-start;
+        }
+
+        .cert-track:hover {
+            animation-play-state: paused;
+        }
+
+        /* Увеличили на 30%: было 220px → 286px */
+        .cert-card {
+            min-width: 286px;
+            max-width: 286px;
+            border-radius: 0.75rem;
+            border: 1px solid #e5e7eb;
+            background-color: #ffffff;
+            padding: 0.75rem;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .cert-card img {
+            max-height: 182px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 0.5rem;
+        }
+
+        .cert-card .cert-label {
+            display: none;
+        }
+
+        @keyframes scrollCerts {
+            0%   { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        /* ───── FAQ ───── */
+        .accordion-button:not(.collapsed) {
+            background-color: #eff6ff;
+            color: #1d4ed8;
+            box-shadow: none;
+        }
+
+        .accordion-button:focus {
+            box-shadow: none;
+        }
+
+        /* ───── ФУТЕР ───── */
+        .footer {
+            background-color: #020617;
+            color: #e5e7eb;
+            padding: 3rem 0 1.5rem;
+        }
+
+        .footer a {
+            color: #e5e7eb;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(148, 163, 184, 0.4);
+            margin-top: 2rem;
+            padding-top: 1rem;
+            font-size: 0.85rem;
+            color: #94a3b8;
+        }
+
+        .messenger-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #1e293b;
+            margin-right: 0.4rem;
+            transition: background 0.2s;
+        }
+
+        .messenger-icon:hover {
+            background-color: #334155;
+        }
+
+        .messenger-icon img {
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
+        }
+
+        /* ───── АДАПТИВ ───── */
+        @media (max-width: 991.98px) {
+            .hero { padding-top: 5rem; }
+            .hero-img-wrap { max-width: 260px; margin-bottom: 1.5rem; }
+        }
+
+        @media (max-width: 767.98px) {
+            .cert-track { animation-duration: 20s; }
+        }
+    </style>
+</head>
+<body>
+
+<header class="sticky-top bg-white">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <a class="navbar-brand fw-semibold" href="#hero">Владимир Сергеевич Русак</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Переключить навигацию">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#about">Обо мне</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#services" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" title="Услуги стоматолога-хирурга">Услуги</a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="#consultation">Консультация стоматолога‑хирурга</a></li>
+                            <li><a class="dropdown-item" href="#implantation">Классическая имплантация зубов</a></li>
+                            <li><a class="dropdown-item" href="#allon4">Имплантация All‑on‑4</a></li>
+                            <li><a class="dropdown-item" href="#allon6">Имплантация All‑on‑6</a></li>
+                            <li><a class="dropdown-item" href="#udalenie">Удаление зубов</a></li>
+                            <li><a class="dropdown-item" href="#sinuslifting">Синус‑лифтинг</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#prices">Цены</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">Вопросы</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacts">Контакты</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <a href="tel:80333023686" class="fw-semibold text-decoration-none">
+                        8 (033) 302‑36‑86
+                    </a>
+                    <button type="button" class="btn btn-primary btn-sm btn-rounded-sm" data-bs-toggle="modal" data-bs-target="#orderModal">
+                        Записаться
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+
+
+
+
+<section id="services" class="py-5">
+    <div class="container">
+        
+
+        <div class="row">
+
+            <h1 class="section-title">Политика конфиденциальности</h1><div class="col-md-12">
+                <article>
+                    
+                    <div class="service-body">
+                        
+                        <p>
+                            Настоящая Политика конфиденциальности описывает, как мы собираем, используем и защищаем информацию, которую вы предоставляете при использовании нашего сайта stomatolog-hirurg.vercel.app.</p>
+                        
+                    </div><div class="service-body">
+                        <h2 id="consultation" class="h3">1. Какую информацию мы собираем</h2>
+                        <p class="mb-0">
+                            <p>Мы можем собирать следующую информацию:</p>
+<ul><li>Данные о посещениях сайта (IP-адрес, браузер, операционная система)</li><li>Информация о взаимодействии с сайтом (просмотренные страницы, клики)</li><li>Данные из cookies и аналогичных технологий</li></ul></p>
+                        
+                    </div><div class="service-body">
+                        <h2 id="consultation" class="h3">2. Как мы используем информацию</h2>
+                        <p>Собранная информация используется для:</p>
+
+
+                        <ul><li>Улучшения работы сайта и пользовательского опыта</li><li>Анализа посещаемости и поведения пользователей</li><li>Персонализации контента и рекомендаций</li><li>Защиты от мошенничества и злоупотреблений</li></ul>
+                    </div><div class="service-body">
+                        <h2 id="consultation" class="h3">3. Cookies</h2>
+                        <p>Мы используем cookies для улучшения работы сайта. Cookies — это небольшие текстовые файлы, которые сохраняются на вашем устройстве. Вы можете отключить cookies в настройках браузера, но это может повлиять на функциональность сайта.</p>
+                        
+                    </div><div class="service-body">
+                        <h2 id="consultation" class="h3">4. Защита данных</h2>
+                        <p>Мы принимаем разумные меры для защиты вашей информации от несанкционированного доступа, изменения, раскрытия или уничтожения. Однако ни один метод передачи данных через интернет не является абсолютно безопасным.</p>
+                        
+                    </div><div class="service-body">
+                        <h2 id="consultation" class="h3">5. Изменения политики</h2>
+                        <p>Мы можем обновлять эту политику время от времени. Рекомендуем периодически проверять эту страницу на наличие изменений.</p>
+                        
+                    </div><div class="service-body">
+                        <h2 id="consultation" class="h3">6. Контакты</h2>
+                        <p>Если у вас есть вопросы о нашей политике конфиденциальности, свяжитесь с нами по телефону: 8(033)302-26-86.</p>
+                        
+                    </div>
+                </article>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer id="contacts" class="footer">
+    <div class="container">
+        <div class="row gy-4">
+
+            <div class="col-md-4">
+                <h3 class="h5 mb-3">Контакты</h3>
+                <p class="mb-2">
+                    Врач стоматолог‑хирург, имплантолог<br>
+                    Русак Владимир Сергеевич
+                </p>
+                <p class="mb-2">
+                    Телефон для записи:<br>
+                    <a href="tel:+375333023686">8 (033) 302‑36‑86</a>
+                </p>
+                <p class="mb-2">
+                    Адрес приёма:<br>
+                    ул. Первомайская, д. 8, Минск
+                </p>
+                <p class="mb-2">
+                    Время работы:<br>
+                    Пн–Сб: 9:00–20:00, по предварительной записи
+                </p>
+                <div class="mb-3">
+                </div>
+                <button type="button" class="btn btn-primary btn-sm btn-rounded-sm" data-bs-toggle="modal" data-bs-target="#orderModal">
+                    Записаться онлайн
+                </button>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="h5 mb-3">Услуги</h3>
+                <ul class="list-unstyled mb-0">
+                    <li><a href="#consultation">Консультация стоматолога‑хирурга</a></li>
+                    <li><a href="#implantation">Классическая имплантация зубов</a></li>
+                    <li><a href="#allon4">Имплантация All‑on‑4</a></li>
+                    <li><a href="#allon6">Имплантация All‑on‑6</a></li>
+                    <li><a href="#udalenie">Удаление зубов</a></li>
+                    <li><a href="#sinuslifting">Синус‑лифтинг</a></li>
+                    <li><a href="#prices">Цены на услуги</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="h5 mb-3">Как добраться</h3>
+                <p class="mb-2">
+                    Клиника расположена недалеко от станции метро «Купаловская» / «Октябрьская», удобный
+                    подъезд на общественном транспорте и автомобиле.
+                </p>
+                <div class="ratio ratio-4x3 rounded-3 overflow-hidden">
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9cc8a98fc6ff6954646e8395cb3101ab8f3484f7bcbcff294c92733c9ff283e6&amp;source=constructor" width="100%" height="100%" frameborder="0" title="Карта проезда к стоматологу-хирургу в Минске"></iframe>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-md-center">
+            <div class="mb-2 mb-md-0">
+                © <span id="currentYear">2026</span> Русак Владимир Сергеевич. Все права защищены.
+            </div>
+            <div class="small">
+                Стоматолог‑хирург, имплантолог в Минске.
+            </div>
+        </div>
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center">
+            <div class="mb-2 mb-md-0"><a href="https://stomatolog-hirurg.vercel.app/privacy-policy.html" title="Политика конфиденциальности">Политика конфиденциальности</a></div>
+        </div>
+    </div>
+</footer>
+
+</main>
+
+<div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="orderModalLabel">Запись на лечение в стоматологию</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+                <form id="orderForm">
+                    <div class="mb-3">
+                        <label for="orderPhone" class="form-label">Телефон</label>
+                        <input type="tel" class="form-control" id="orderPhone" name="phone" placeholder="+375 (__) ___‑__‑__" required="">
+                    </div>
+                    <div class="mb-3">
+                        <label for="orderMsg" class="form-label">Сообщение</label>
+                        <textarea class="form-control" id="orderMsg" name="msg" rows="4" placeholder="Кратко опишите вашу ситуацию или желаемую услугу"></textarea>
+                    </div>
+                    <div id="orderAlert" class="alert d-none" role="alert"></div>
+                    <button type="submit" class="btn btn-primary btn-rounded w-100">
+                        Отправить заявку
+                    </button>
+                    <p class="mt-2 mb-0 small text-muted">
+                        Нажимая на кнопку, вы соглашаетесь с обработкой персональных данных для организации
+                        записи на приём.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+    const orderModal    = document.getElementById('orderModal');
+    const orderMsgField = document.getElementById('orderMsg');
+
+    orderModal.addEventListener('show.bs.modal', function (event) {
+        const trigger = event.relatedTarget;
+        const service = trigger && trigger.getAttribute('data-service');
+        if (service && !orderMsgField.value) {
+            orderMsgField.value = 'Интересует услуга: ' + service;
+        }
+    });
+
+document.getElementById('orderForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    const phone = document.getElementById('orderPhone').value.trim();
+    const msg = orderMsgField.value.trim();
+    const alertEl = document.getElementById('orderAlert');
+    const form = this;  // Ссылка на форму
+
+    if (!phone) {
+        alertEl.className = 'alert alert-danger';
+        alertEl.textContent = 'Пожалуйста, укажите номер телефона.';
+        alertEl.classList.remove('d-none');
+        return;
+    }
+
+    const fd = new FormData();
+    fd.append('phone', phone);
+    fd.append('msg', msg);
+
+    fetch('https://allon6.minsk.by/order.php', {
+    method: 'POST', 
+    body: fd,
+    mode: 'no-cors'  // Игнорирует CORS, но не читает ответ
+})
+.then(r => {
+    // Всегда считаем успешным при no-cors
+    alertEl.className = 'alert alert-success';
+    alertEl.textContent = 'Заявка отправлена!';
+    form.reset();
+    alertEl.classList.remove('d-none');
+})
+});
+</script>
+ 
+
+
+</body></html>
 
